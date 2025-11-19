@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to bottom right, #6fb1fc, #4364f7, #3f51b5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 450px;
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    animation: fadeIn 0.6s ease;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #fff;
+    color: #3f51b5;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.gps-btn {
+    width: 100%;
+    margin-top: 15px;
+    background: #ffeb3b;
+    color: #333;
+}
+
+.weather-card {
+    margin-top: 25px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+
+.weather-card img {
+    width: 90px;
+}
+
+.weather-card.show {
+    display: block;
+    animation: fadeIn 0.8s ease;
+}
+
+.forecast-container {
+    margin-top: 25px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+}
+
+.forecast-card {
+    background: rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 0.6s ease;
+}
+
+.forecast-card img {
+    width: 50px;
+    margin-bottom: 8px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

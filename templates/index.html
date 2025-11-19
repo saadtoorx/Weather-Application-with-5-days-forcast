@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="title">🌤 Weather App</h1>
+
+        <div class="search-box">
+            <input id="locationInput" type="text" placeholder="Enter city or zipcode">
+            <button onclick="getWeather()">Search</button>
+        </div>
+
+        <button class="gps-btn" onclick="getCurrentLocationWeather()">
+            📍 Use Current Location
+        </button>
+
+        <div id="weatherResult" class="weather-card"></div>
+        <div id="forecastResult" class="forecast-container"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
