@@ -56,3 +56,8 @@ Notes & small changes
 - Geolocation ("Use Current Location") works on `localhost` or HTTPS contexts in browsers.
 - I fixed a small front-end issue so the weather card becomes visible after a successful lookup (file: `static/script.js`).
 - Recommended extras: add `requirements.txt` and `.gitignore` (see repo files).
+
+**Repository**
+- Remote: `https://github.com/saadtoorx/saadtoorx-Weather-Application-with-5-days-forcast.git`
+
+The project has been pushed to the GitHub repository above. Clone or pull from that remote to get the full project history.
